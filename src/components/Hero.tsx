@@ -90,7 +90,7 @@ const Hero = () => {
           {/* <h2 className="text-xl md:text-2xl text-accent-blue mb-8 hero-reveal">I am a Web Developer</h2> */}
           <h2 className="text-xl md:text-2xl text-[#36BCF7] mb-8 hero-reveal">I am a
             
-  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=25&left=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer+(MERN Stack)"/>
+  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=28&left=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer+(MERN Stack)"/>
   </h2>
 
           
@@ -184,7 +184,8 @@ const Hero = () => {
           <div className="hero-image relative w-72 h-72 md:w-96 md:h-96 rounded-full border-4 border-white/10 p-2 overflow-hidden bg-gradient-to-br from-card-bg to-dark-bg shadow-2xl">
             <img
               alt="Kazi Jamshed Alam"
-              className="w-full h-full object-cover rounded-full"
+              // w-full h-full 
+              className="object-cover rounded-full"
               src="/profile.jpg"
             />
           </div>

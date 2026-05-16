@@ -271,8 +271,19 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   <p className="text-sm italic text-gray-400 mb-8 max-w-lg mx-auto">
                     "I, the undersigned, certify that to the best of my knowledge and belief, this curriculum vitae correctly describes my qualifications, experience, and character."
                   </p>
+
+                  
+
                   <h3 className="text-2xl font-bold text-white mb-1">Kazi Jamshed Alam</h3>
                   {/* <p className="text-xs text-accent-blue uppercase tracking-widest font-bold">Date: 10/01/2025</p> */}
+
+                    <button 
+                  onClick={onClose}
+                  className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 text-white transition-colors"
+                >
+                  <i className="fas fa-times"></i>
+                </button>
+
                 </div>
               </div>
             </div>
