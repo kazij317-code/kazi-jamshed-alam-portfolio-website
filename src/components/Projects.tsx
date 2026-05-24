@@ -5,6 +5,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const projectsData = [
   {
+  title: 'IdeaVault – Idea Sharing Platform',
+  description: 'IdeaVault is a modern idea-sharing platform where users can create, manage, and explore innovative ideas. It features secure authentication, personalized dashboards, search and category filtering, and an interactive commenting system for community engagement.',
+  image: '/p7.png',
+  tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'HeroUI'],
+  github: 'https://github.com/kazij317-code/IdeaVault-client.git',
+  demo: 'https://idea-vault-client-pi.vercel.app/',
+  glow: 'from-cyan-500/20',
+  stack: ['Next.js', 'MongoDB', 'Express.js', 'Tailwind CSS', 'HeroUI'],
+  challenges: 'Implementing secure authentication with protected routes, handling dynamic CRUD operations smoothly, and ensuring responsive UI across all devices.',
+  improvements: 'Add real-time notifications, advanced idea recommendations, and an admin dashboard for better platform management.'
+},
+  {
     title: 'QurbaniHat – Livestock Booking Platform',
     description: 'QurbaniHat is a modern livestock booking platform designed to simplify the process of buying animals for Qurbani. It allows users to browse, select, and book livestock online in a safe, transparent, and convenient way—without visiting crowded markets.',
     image: '/p5.png',

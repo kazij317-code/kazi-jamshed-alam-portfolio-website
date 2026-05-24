@@ -10,7 +10,7 @@ const Contact = () => {
     },
     {
       label: 'MOBILE',
-      value: '01712736526',
+      value: '+8801712736526',
       icon: 'fa-solid fa-phone',
       link: 'tel:+8801712736526',
     },

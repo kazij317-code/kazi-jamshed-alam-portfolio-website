@@ -88,9 +88,9 @@ const Hero = () => {
             {/* 👋 */}
           </h1>
           {/* <h2 className="text-xl md:text-2xl text-accent-blue mb-8 hero-reveal">I am a Web Developer</h2> */}
-          <h2 className="text-xl md:text-2xl text-[#36BCF7] mb-8 hero-reveal">I am a
+          <h2 className="text-3xl md:text-3xl text-[#36BCF7] mb-8 hero-reveal">I am a
             
-  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=30&left=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer+(MERN Stack)"/>
+  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=28&left=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer+(MERN Stack)"/>
   </h2>
 
           

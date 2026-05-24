@@ -38,7 +38,12 @@ const Skills = () => {
   const backendSkills = [
     { name: 'Node.js', img: 'https://skillicons.dev/icons?i=nodejs', expertise: 'Intermediate', level: 70 },
     { name: 'Express.js', img: 'https://skillicons.dev/icons?i=express', expertise: 'Intermediate', level: 75 },
-    { name: 'MongoDB', img: 'https://skillicons.dev/icons?i=mongodb', expertise: 'Intermediate', level: 70 },
+    {
+  name: 'Better Auth',
+  img: 'https://www.better-auth.com/logo.svg',
+  expertise: 'Intermediate',
+  level: 70
+},
     { name: 'Firebase', img: 'https://skillicons.dev/icons?i=firebase', expertise: 'Intermediate', level: 70 },
     // { name: 'Docker', img: 'https://skillicons.dev/icons?i=docker', expertise: 'Intermediate', level: 80 },
     { name: 'PostgreSQL', img: 'https://skillicons.dev/icons?i=postgres', expertise: 'Intermediate', level: 70 },

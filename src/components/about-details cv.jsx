@@ -83,43 +83,47 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
 
                 {/* Web Development Skills */}
                 <section>
-                    <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                  {/* <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">02</span>
+                    Web Development Skills
+                  </h4> */}
+                  <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">02</span>
                     TECHNICAL SKILLS
-                    </h4>
+                  </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="space-y-4 ml-6">
-                        <p className="mb-3">
-                          <span className="font-bold">Frontend:</span>{" "}
-                          <span className="text-sm">HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Tailwind CSS</span>
-                        </p>
-
-                        <p className="mb-3">
-                          <span className="font-bold">Backend:</span>{" "}
-                          <span className="text-sm">Node.js, Express.js, REST APIs</span>
-                        </p>
-                        <p className="mb-3">
-                          <span className="font-bold">Database & Auth:</span>{" "}
-                          <span className="text-sm">MongoDB, Firebase Authentication</span>
-                        </p>
-                        <p className="mb-3">
-                          <span className="font-bold">Tools & Platforms:</span>{" "}
-                          <span className="text-sm">Git, GitHub, VS Code, Vercel, Netlify</span>
-                        </p>                        
-                        <p className="mb-3">
-                          <span className="font-bold">Soft Skills:</span>{" "}
-                          <span className="text-sm">Problem Solving, Team Collaboration, Communication, Time Management</span>
-                        </p>                        
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="text-white font-bold mb-2 text-xs uppercase tracking-widest text-accent-blue">Frontend</h5>
+                        <p className="text-sm">HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Tailwind CSS</p>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-bold mb-2 text-xs uppercase tracking-widest text-accent-blue">Frameworks/Libraries</h5>
+                        <p className="text-sm">React.js, Next.js</p>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-bold mb-2 text-xs uppercase tracking-widest text-accent-blue">Backend & Database</h5>
+                        <p className="text-sm">Node.js, Express.js, MongoDB, Firebase</p>
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <div>
+                        <h5 className="text-white font-bold mb-2 text-xs uppercase tracking-widest text-accent-blue">Fundamentals</h5>
+                        <p className="text-[11px] leading-relaxed">Variables, Data Types, Operators, Conditionals, Loops, Functions, Arrays, Objects, DOM Manipulation, Event Handling, JSON, API Concepts</p>
+                      </div>
+                      <div>
+                        <h5 className="text-white font-bold mb-2 text-xs uppercase tracking-widest text-accent-blue">UI/UX & Tools</h5>
+                        <p className="text-sm">Responsive Design, Modern UI, GSAP, Framer Motion, Git, GitHub, VS Code</p>
+                      </div>
                     </div>
                   </div>
-                    
                 </section>
 
                 {/* Work Experience */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">03</span>
-                    PROFESSIONAL EXPERIENCE
+                    Work Experience
                   </h4>
                   <div className="space-y-8">
                     {[
@@ -128,14 +132,65 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         company: 'Regional Passport Office, Narayanganj',
                         date: 'May 2018 - August 2025',
                         tasks: [
-                          'Managed IT infrastructure and technical support operations.',
-                          'Troubleshot systems, networks, and user issues .',
-                          'Maintained server and bio-enrollment systems.',
+                          'Troubleshoot and resolve computer hardware, software, and system problems.',
+                          'Monitor and maintain network performance.',
+                          'Manage server operations and bio-enrollment devices.',
+                          'Provide technical support via phone and email for passport-related issues.'
+                        ]
+                      },
+                      {
+                        role: 'Supervisor',
+                        company: 'iPeople Ltd. [Associated with Malaysian based company IRIS JV]',
+                        date: 'August 2014 - April 2018',
+                        tasks: [
+                          'Supervised Machine Readable Passport (MRP) project operations.',
+                          'Managed office operations and administrative tasks.',
+                          'Coordinated between staff and upper management.',
+                          'Maintained files, documentation, and attendance records.'
+                        ]
+                      },
+                      {
+                        role: 'Supervisor',
+                        company: 'iPeople Ltd. (IRIS JV)',
+                        date: 'July 2012 - February 2014',
+                        tasks: [
+                          'Led daily operations for passport enrollment project in Comilla.',
+                          'Monitored team performance and provided coaching.',
+                          'Ensured compliance with policies and procedures.'
+                        ]
+                      },
+                      {
+                        role: 'Enrollment Executive',
+                        company: 'iPeople Ltd. (IRIS JV)',
+                        date: 'April 2010 - June 2012',
+                        tasks: [
+                          'Processed passport applications and collected fees.',
+                          'Verified applicant identity and eligibility.',
+                          'Managed digital records and documentation.'
+                        ]
+                      },
+                      {
+                        role: 'Documentation Engineer',
+                        company: 'Speed Communication (Telecom & Network Engineering)',
+                        date: 'April 2008 - February 2009',
+                        tasks: [
+                          'Developed, wrote, and edited technical documentation for complex telecom and network systems.',
+                          'Collaborated with development, testing, and product management teams to ensure content accuracy.',
+                          'Maintained all documentation to reflect the latest technical specifications and product updates.'
+                        ]
+                      },
+                      {
+                        role: 'Executive Officer',
+                        company: 'Sky-Land Computers',
+                        date: 'January 2004 - January 2008',
+                        tasks: [
+                          'Developed, implemented, and evaluated training programs to enhance student and employee skills.',
+                          'Conducted training needs assessments to identify skill gaps and improve curriculum.',
+                          'Created comprehensive instructional materials, presentations, and training documentation.'
                         ]
                       }
-                      
                     ].map((job, i) => (
-                      <div key={i} className="pl-6">
+                      <div key={i} className="relative pl-6 border-l border-accent-blue/30">
                         <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
                         <h5 className="text-white font-bold">{job.role}</h5>
                         <p className="text-accent-blue text-sm mb-3">{job.company} | {job.date}</p>
@@ -147,79 +202,12 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                       </div>
                     ))}
                   </div>
-                  
-                </section>
-                {/* Projects */}
-                <section>
-                  <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">04</span>
-                    PROJECTS
-                  </h4>
-                  <div className="space-y-8">
-                    {[
-                      {
-                        name: '1. Idea Vault',                        
-                        overview: 'A full-stack collaborative idea-sharing platform where users can create, manage, and interact with innovative ideas.',
-                        live: 'https://idea-vault-client-pi.vercel.app',
-                        client: 'https://github.com/kazij317-code/IdeaVault-client',
-                        server: 'https://github.com/kazij317-code/IdeaVault-server',
-                        features: 'Major Features:',
-                        tasks: [
-                          'Authentication & protected routes, CRUD personal ideas .',
-                          'Search/filter with comments & user engagement.',
-                          'Fully responsive modern UI design.',                          
-                        ]
-                      },
-                      {
-                        name: '2. Qurbani Hat',                        
-                        overview: 'Online cattle marketplace platform for buying and selling sacrificial animals with secure user interaction.',
-                        live: 'https://qurbani-hat-my-assignment.vercel.app',
-                        client: 'https://github.com/kazij317-code/qurbani-hat-my-assignment',
-                        server: 'NA',
-                        features: 'Major Features:',
-                        tasks: [
-                          'Browse, filter animals and manage listings.',
-                          'User authentication with add/edit/delete features.',
-                          'Mobile-responsive, dynamic UI with smooth UX ',                          
-                        ]
-                      }
-                      
-                    ].map((job, i) => (
-                      <div key={i} className="relative pl-6 border-l border-accent-blue/30">
-                        <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
-                        <h5 className="text-accent-blue text-lg font-bold mb-3">{job.name}</h5>
-                       
-                        <p className="font-bold mb-1">Overview:</p>
-                        <p className="text-sm mb-3">{job.overview}</p>
-                        <p className="mb-3">
-                          <span className="font-bold">Live:</span>{" "}
-                          <span className="text-sm">{job.live}</span>
-                        </p>
-                        <p className="mb-3">
-                          <span className="font-bold">Github Client:</span>{" "}
-                          <span className="text-sm">{job.client}</span>
-                        </p>
-                        <p className="mb-3">
-                          <span className="font-bold">Github Server:</span>{" "}
-                          <span className="text-sm">{job.server}</span>
-                        </p>
-                                                                                        
-                        <p className="font-bold mb-3">{job.features}</p>
-                        <ul className="space-y-2 list-disc list-inside text-sm">
-                          {job.tasks.map((task, j) => (
-                            <li key={j}>{task}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                  
                 </section>
 
                 {/* Education */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">04</span>
                     Education
                   </h4>
                   <div className="space-y-4">
@@ -227,7 +215,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                       <h5 className="text-white font-bold text-sm">B.Sc. (Honors) in Physics</h5>
                       <p className="text-[10px] text-gray-400">Cumilla Victoria Government College-2004</p>
                     </div>
-                    {/* <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4">
                       <div className="p-4 rounded-xl bg-white/5 border border-white/5">
                         <h5 className="text-white font-bold text-sm">H.S.C</h5>
                         <p className="text-[10px] text-gray-400">Cumilla Victoria Government College-1998</p>
@@ -236,14 +224,14 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         <h5 className="text-white font-bold text-sm">S.S.C</h5>
                         <p className="text-[10px] text-gray-400">Cumilla High School-1995</p>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </section>
 
                 {/* Certifications */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">06</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
                     Certifications
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -258,22 +246,10 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </div>
                 </section>
 
-                {/* Language */}
-                <section>
-                  
-                  <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">07</span>
-                    LANGUAGES
-                  </h4>
-                  <p className="leading-relaxed">
-                    Bengali (Native), English (Proficient)
-                  </p>
-                </section>
-
                 {/* Personal Details */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">08</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">06</span>
                     Personal Details
                   </h4>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-[11px]">
@@ -314,7 +290,6 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/10 text-white transition-colors"
                 >
                   <i className="fas fa-times"></i>
-                  {/* Close */}
                 </button>
 
                 </div>
