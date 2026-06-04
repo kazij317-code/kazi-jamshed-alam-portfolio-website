@@ -90,7 +90,8 @@ const Hero = () => {
           {/* <h2 className="text-xl md:text-2xl text-accent-blue mb-8 hero-reveal">I am a Web Developer</h2> */}
           <h2 className="text-3xl md:text-3xl text-[#36BCF7] mb-8 hero-reveal">I am a
             
-  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=28&left=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer+(MERN Stack)"/>
+  <img src="https://readme-typing-svg.herokuapp.com?color=36BCF7&size=28&left=true&vCenter=true&width=600&lines=Frontend+Developer;MERN+Stack+Developer;React.js+%7C+Next.js+Developer"/>
+  {/* <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=900&lines=Hi+👋,+I'm+Kazi+Jamshed+Alam;Frontend+Developer;MERN+Stack+Developer;React.js+%7C+Next.js+Developer;Building+Modern+Web+Applications;Open+to+Remote+Opportunities" /> */}
   </h2>
 
           
@@ -99,7 +100,7 @@ const Hero = () => {
             <p className="flex items-center gap-2">
               {/* <i className="fas fa-lightbulb text-accent-blue"></i>  */}
               {/* Turning Ideas into Stunning Websites */}
-              Building responsive and scalable web applications with React, Next.js, Node.js, Express, and MongoDB.
+              Building modern responsive and scalable web applications with React, Next.js, Node.js, Express, and MongoDB.
             </p>
             {/* <p className="flex items-center gap-2">
               <i className="fas fa-check-circle text-accent-blue"></i> Available for projects and collaborations

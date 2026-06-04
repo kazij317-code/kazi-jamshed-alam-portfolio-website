@@ -55,8 +55,8 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
               <div className="max-w-3xl mx-auto space-y-10">
                 {/* Header Info */}
                 <div className="text-center space-y-4">
-                  <h1 className="text-4xl font-bold text-white uppercase tracking-tight">KAZI JAMSHED ALAM (MITHU)</h1>
-                  <h1 className="text-4xl font-bold text-white uppercase tracking-tight">Junior Full Stack Web Developer | MERN Stack Developer</h1>
+                  <h1 className="text-3xl font-bold text-white uppercase tracking-tight">KAZI JAMSHED ALAM (MITHU)</h1>
+                  <h1 className="text-2xl font-bold text-white tracking-tight">Frontend Developer | MERN Stack Developer</h1>
                   <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-accent-blue font-medium">
                     <span><i className="fas fa-envelope mr-2"></i>kazij317@gmail.com</span>
                     <span><i className="fas fa-phone-alt mr-2"></i>01712-736526</span>
@@ -74,10 +74,12 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </h4> */}
                   <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">01</span>
-                    CAREER OBJECTIVE
+                    PROFESSIONAL SUMMARY
                   </h4>
                   <p className="leading-relaxed">
-                    Motivated Junior Full Stack Web Developer with hands-on experience in MERN stack development and building responsive web applications. Transitioned from IT support to software development with strong problem-solving skills and a passion for modern web technologies.
+                    {/* Motivated Junior Full Stack Web Developer with hands-on experience in MERN stack development and building responsive web applications. Transitioned from IT support to software development with strong problem-solving skills and a passion for modern web technologies. */}
+
+                    Frontend Developer with hands-on experience building responsive web applications using React.js, Next.js, and the MERN stack. Skilled in REST API integration, authentication, dashboard development, and creating reusable, user-friendly UI components. Strong problem-solver with an IT support background, passionate about modern web technologies, performance optimization, and delivering high-quality software solutions.
                   </p>
                 </section>
 
@@ -87,28 +89,36 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                     <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">02</span>
                     TECHNICAL SKILLS
                     </h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                     <div className="space-y-4 ml-6">
                         <p className="mb-3">
                           <span className="font-bold">Frontend:</span>{" "}
-                          <span className="text-sm">HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Tailwind CSS</span>
+                          <span className="text-sm">React.js, Next.js, JavaScript (ES6+), HTML5, CSS3, React Router, Context API</span>
+                        </p>
+                        <p className="mb-3">
+                          <span className="font-bold">UI & Styling:</span>{" "}
+                          <span className="text-sm">Tailwind CSS, DaisyUI, HeroUI, Framer Motion, Responsive Design, Accessibility, SEO Basics</span>
+                        </p>
+                        <p className="mb-3">
+                          <span className="font-bold">Forms & Data:</span>{" "}
+                          <span className="text-sm">Axios, Fetch API, React Hook Form, Pagination, Filtering, Search, Protected Routes, Error Handling</span>
                         </p>
 
                         <p className="mb-3">
-                          <span className="font-bold">Backend:</span>{" "}
-                          <span className="text-sm">Node.js, Express.js, REST APIs</span>
+                          <span className="font-bold">Backend & Database:</span>{" "}
+                          <span className="text-sm">Node.js, Express.js, MongoDB, REST APIs, CRUD Operations, JWT, Better Auth,  Server-side Validation</span>
                         </p>
                         <p className="mb-3">
-                          <span className="font-bold">Database & Auth:</span>{" "}
-                          <span className="text-sm">MongoDB, Firebase Authentication</span>
+                          <span className="font-bold">Tools & Deployment:</span>{" "}
+                          <span className="text-sm">Git, GitHub, Vite, npm, Chrome DevTools, Figma, Vercel, Netlify, VS Code</span>
                         </p>
                         <p className="mb-3">
-                          <span className="font-bold">Tools & Platforms:</span>{" "}
-                          <span className="text-sm">Git, GitHub, VS Code, Vercel, Netlify</span>
+                          <span className="font-bold">AI Tools:</span>{" "}
+                          <span className="text-sm">ChatGPT, Gemini, GitHub Copilot, Cursor, AI-assisted Debugging, Documentation, Test-case Generation</span>
                         </p>                        
                         <p className="mb-3">
                           <span className="font-bold">Soft Skills:</span>{" "}
-                          <span className="text-sm">Problem Solving, Team Collaboration, Communication, Time Management</span>
+                          <span className="text-sm">Problem Solving, Self-learning, Technical Documentation, Team Collaboration, Communication</span>
                         </p>                        
                     </div>
                   </div>
@@ -128,9 +138,9 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         company: 'Regional Passport Office, Narayanganj',
                         date: 'May 2018 - August 2025',
                         tasks: [
-                          'Managed IT infrastructure and technical support operations.',
-                          'Troubleshot systems, networks, and user issues .',
-                          'Maintained server and bio-enrollment systems.',
+                          'Managed IT infrastructure and provided technical support for end users.',
+                          'Diagnosed and resolved hardware, software, and network-related issues.',
+                          'Maintained system reliability, user accounts, and biometric enrollment operations.',
                         ]
                       }
                       
@@ -158,29 +168,29 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   <div className="space-y-8">
                     {[
                       {
-                        name: '1. Idea Vault',                        
-                        overview: 'A full-stack collaborative idea-sharing platform where users can create, manage, and interact with innovative ideas.',
+                        name: '1. Idea Vault | Full Stack Idea Management Platform',                        
+                        // overview: 'A full-stack collaborative idea-sharing platform where users can create, manage, and interact with innovative ideas.',
                         live: 'https://idea-vault-client-pi.vercel.app',
                         client: 'https://github.com/kazij317-code/IdeaVault-client',
                         server: 'https://github.com/kazij317-code/IdeaVault-server',
-                        features: 'Major Features:',
+                        features: 'Next.js, React.js, Tailwind CSS, HeroUI, JWT with Better Auth, Node.js, Express.js, MongoDB',
                         tasks: [
-                          'Authentication & protected routes, CRUD personal ideas .',
-                          'Search/filter with comments & user engagement.',
-                          'Fully responsive modern UI design.',                          
+                          'Developed a secure idea management platform with CRUD operations, search, and category filtering.',
+                          'Implemented Better Auth, JWT authorization, protected routes, and user-specific data access.',
+                          'Built a responsive UI with comments, modern design, and seamless cross-device experience.',                          
                         ]
                       },
                       {
-                        name: '2. Qurbani Hat',                        
-                        overview: 'Online cattle marketplace platform for buying and selling sacrificial animals with secure user interaction.',
+                        name: '2. Qurbani Hat | Online Livestock Marketplace',                        
+                        // overview: 'Online cattle marketplace platform for buying and selling sacrificial animals with secure user interaction.',
                         live: 'https://qurbani-hat-my-assignment.vercel.app',
                         client: 'https://github.com/kazij317-code/qurbani-hat-my-assignment',
                         server: 'NA',
-                        features: 'Major Features:',
+                        features: 'Next.js, React.js, Tailwind CSS, DaisyUI, Better Auth',
                         tasks: [
-                          'Browse, filter animals and manage listings.',
-                          'User authentication with add/edit/delete features.',
-                          'Mobile-responsive, dynamic UI with smooth UX ',                          
+                          'Developed a full-stack livestock marketplace with animal browsing, listing, and management features.',
+                          'Implemented authentication, protected routes, role-based access control.',
+                          'Built a responsive UI with search, filtering, and seamless user experience across devices.',                          
                         ]
                       }
                       
@@ -189,22 +199,26 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
                         <h5 className="text-accent-blue text-lg font-bold mb-3">{job.name}</h5>
                        
-                        <p className="font-bold mb-1">Overview:</p>
+                        {/* <p className="font-bold mb-1">Overview:</p> */}
                         <p className="text-sm mb-3">{job.overview}</p>
                         <p className="mb-3">
                           <span className="font-bold">Live:</span>{" "}
                           <span className="text-sm">{job.live}</span>
                         </p>
                         <p className="mb-3">
-                          <span className="font-bold">Github Client:</span>{" "}
+                          <span className="font-bold">Github (client):</span>{" "}
                           <span className="text-sm">{job.client}</span>
                         </p>
                         <p className="mb-3">
-                          <span className="font-bold">Github Server:</span>{" "}
+                          <span className="font-bold">Github (server):</span>{" "}
                           <span className="text-sm">{job.server}</span>
                         </p>
+                        <p className="mb-3">
+                          <span className="font-bold">Tech Stack:</span>{" "}
+                          <span className="text-sm">{job.features}</span>
+                        </p>
                                                                                         
-                        <p className="font-bold mb-3">{job.features}</p>
+                        {/* <p className="font-bold mb-3">{job.features}</p> */}
                         <ul className="space-y-2 list-disc list-inside text-sm">
                           {job.tasks.map((task, j) => (
                             <li key={j}>{task}</li>
@@ -224,8 +238,8 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </h4>
                   <div className="space-y-4">
                     <div className="p-4 rounded-xl bg-white/5 border border-white/5">
-                      <h5 className="text-white font-bold text-sm">B.Sc. (Honors) in Physics</h5>
-                      <p className="text-[10px] text-gray-400">Cumilla Victoria Government College-2004</p>
+                      <h5 className="text-white font-bold text-sm">B.Sc. (Honours) in Physics | Cumilla Victoria Government College | 2004</h5>
+                      <p className="text-[10px]">(Transitioned to IT/Software Development through professional training and self-learning)</p>
                     </div>
                     {/* <div className="grid grid-cols-2 gap-4">
                       <div className="p-4 rounded-xl bg-white/5 border border-white/5">
@@ -248,12 +262,12 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 rounded-xl bg-accent-blue/5 border border-accent-blue/10">
-                      <p className="text-xs text-white font-bold mb-1">(1) Oracle Database 11g: Administration Workshop</p>
-                      <p className="text-[10px] text-accent-blue uppercase font-bold">Oracle University – Workforce Development</p>
+                      <p className="text-xs text-white font-bold mb-1">(1) Complete Web Development Course</p>
+                      <p className="text-[10px] text-accent-blue uppercase font-bold">with Programming Hero | 2026</p>
                     </div>
                     <div className="p-4 rounded-xl bg-accent-blue/5 border border-accent-blue/10">
-                      <p className="text-xs text-white font-bold mb-1">(2) Complete Web Development</p>
-                      <p className="text-[10px] text-accent-blue uppercase font-bold">with Programming Hero</p>
+                      <p className="text-xs text-white font-bold mb-1">(2) Oracle Database 11g: Administration Workshop</p>
+                      <p className="text-[10px] text-accent-blue uppercase font-bold">Oracle University | IBCS-PRIMAX | 2019</p>
                     </div>
                   </div>
                 </section>
