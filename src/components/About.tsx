@@ -55,7 +55,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
               <div className="max-w-3xl mx-auto space-y-10">
                 {/* Header Info */}
                 <div className="text-center space-y-4">
-                  <h1 className="text-3xl font-bold text-white uppercase tracking-tight">KAZI JAMSHED ALAM (MITHU)</h1>
+                  <h1 className="text-4xl font-bold text-white uppercase tracking-tight">KAZI JAMSHED ALAM (MITHU)</h1>
                   <h1 className="text-2xl font-bold text-white tracking-tight">Frontend Developer | MERN Stack Developer</h1>
                   <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-accent-blue font-medium">
                     <span><i className="fas fa-envelope mr-2"></i>kazij317@gmail.com</span>
