@@ -57,10 +57,35 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 <div className="text-center space-y-4">
                   <h1 className="text-4xl font-bold text-white uppercase tracking-tight">KAZI JAMSHED ALAM (MITHU)</h1>
                   <h1 className="text-2xl font-bold text-white tracking-tight">Frontend Developer | MERN Stack Developer</h1>
-                  <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-accent-blue font-medium">
-                    <span><i className="fas fa-envelope mr-2"></i>kazij317@gmail.com</span>
-                    <span><i className="fas fa-phone-alt mr-2"></i>01712-736526</span>
+                  <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-accent-blue font-medium">
+                    
+                    
                     <span><i className="fas fa-map-marker-alt mr-2"></i>Dhaka, Bangladesh</span>
+                    <div className="h-6 w-px bg-white/20" />
+                    
+                    <a href="tel:+8801712736526" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                      <span><i className="fas fa-phone-alt mr-2"></i>01712-736526</span>
+                    </a>
+                    <div className="h-6 w-px bg-white/20" />
+                    
+                    <a href="mailto:kazij317@gmail.com" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                      <span><i className="fas fa-envelope mr-2"></i>kazij317@gmail.com</span>
+                    </a>
+                    
+                    <div className="h-6 w-px bg-white/20" />
+                    <a href="https://linkedin.com/in/kazijamshedalam" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                      LinkedIn
+                    </a>
+                    <div className="h-6 w-px bg-white/20" />
+                    
+                    <a href="https://github.com/kazij317-code" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                     GitHub
+                    </a>
+                    <div className="h-6 w-px bg-white/20" />
+                    
+                    <a href="https://kazi-jamshed-alam-portfolio-website.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                     Portfolio
+                    </a>
                   </div>
                 </div>
 
@@ -74,7 +99,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </h4> */}
                   <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">01</span>
-                    PROFESSIONAL SUMMARY
+                    CAREER OBJECTIVE
                   </h4>
                   <p className="leading-relaxed">
                     {/* Motivated Junior Full Stack Web Developer with hands-on experience in MERN stack development and building responsive web applications. Transitioned from IT support to software development with strong problem-solving skills and a passion for modern web technologies. */}
@@ -192,6 +217,19 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                           'Implemented authentication, protected routes, role-based access control.',
                           'Built a responsive UI with search, filtering, and seamless user experience across devices.',                          
                         ]
+                      },
+                      {
+                        name: '3. Keen Keeper | Task Management Application',                        
+                        // overview: 'Online cattle marketplace platform for buying and selling sacrificial animals with secure user interaction.',
+                        live: 'https://kazij317-code.github.io/B13-A7-keen-keeper/',
+                        client: 'https://github.com/kazij317-code/B13-A7-keen-keeper',
+                        server: 'NA',
+                        features: 'HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, DaisyUI',
+                        tasks: [
+                          'Built a responsive task management application for creating, organizing, and tracking daily tasks.',
+                          'Developed interactive UI components and real-time task updates using JavaScript DOM manipulation.',
+                          'Optimized user experience with a mobile-first design, responsive layouts, and fast-loading frontend architecture.',                          
+                        ]
                       }
                       
                     ].map((job, i) => (
@@ -201,7 +239,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                        
                         {/* <p className="font-bold mb-1">Overview:</p> */}
                         <p className="text-sm mb-3">{job.overview}</p>
-                        <p className="mb-3">
+                        {/* <p className="mb-3">
                           <span className="font-bold">Live:</span>{" "}
                           <span className="text-sm">{job.live}</span>
                         </p>
@@ -212,7 +250,48 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         <p className="mb-3">
                           <span className="font-bold">Github (server):</span>{" "}
                           <span className="text-sm">{job.server}</span>
-                        </p>
+                        </p> */}
+                        {/* ---------------- */}
+                          <p className="mb-3 text-sm">
+  <a
+    href={job.live}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-accent-blue hover:underline"
+  >
+    Live
+  </a>
+
+  {job.client && (
+    <>
+      {" | "}
+      <a
+        href={job.client}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent-blue hover:underline"
+      >
+        GitHub (Client)
+      </a>
+    </>
+  )}
+
+  {job.server !== "NA" && (
+    <>
+      {" | "}
+      <a
+        href={job.server}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-accent-blue hover:underline"
+      >
+        GitHub (Server)
+      </a>
+    </>
+  )}
+</p>
+
+                        {/* ------------------ */}
                         <p className="mb-3">
                           <span className="font-bold">Tech Stack:</span>{" "}
                           <span className="text-sm">{job.features}</span>
@@ -239,7 +318,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   <div className="space-y-4">
                     <div className="p-4 rounded-xl bg-white/5 border border-white/5">
                       <h5 className="text-white font-bold text-sm">B.Sc. (Honours) in Physics | Cumilla Victoria Government College | 2004</h5>
-                      <p className="text-[10px]">(Transitioned to IT/Software Development through professional training and self-learning)</p>
+                      {/* <p className="text-[10px]">(Transitioned to IT/Software Development through professional training and self-learning)</p> */}
                     </div>
                     {/* <div className="grid grid-cols-2 gap-4">
                       <div className="p-4 rounded-xl bg-white/5 border border-white/5">
