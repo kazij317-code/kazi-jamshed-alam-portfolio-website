@@ -238,7 +238,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         <h5 className="text-accent-blue text-lg font-bold mb-3">{job.name}</h5>
                        
                         {/* <p className="font-bold mb-1">Overview:</p> */}
-                        <p className="text-sm mb-3">{job.overview}</p>
+                        {/* <p className="text-sm mb-3">{job.overview}</p> */}
                         {/* <p className="mb-3">
                           <span className="font-bold">Live:</span>{" "}
                           <span className="text-sm">{job.live}</span>
