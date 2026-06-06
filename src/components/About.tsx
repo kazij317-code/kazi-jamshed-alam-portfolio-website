@@ -184,44 +184,10 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </div>
                   
                 </section>
-                {/* Work Experience */}
-                <section>
-                  <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">04</span>
-                    PROFESSIONAL EXPERIENCE
-                  </h4>
-                  <div className="space-y-8">
-                    {[
-                      {
-                        role: 'Executive-IT',
-                        company: 'Regional Passport Office, Narayanganj',
-                        date: 'May 2018 - August 2025',
-                        tasks: [
-                          'Managed IT infrastructure and provided technical support for end users.',
-                          'Diagnosed and resolved hardware, software, and network-related issues.',
-                          'Maintained system reliability, user accounts, and biometric enrollment operations.',
-                        ]
-                      }
-                      
-                    ].map((job, i) => (
-                      <div key={i} className="pl-6">
-                        <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
-                        <h5 className="text-white font-bold">{job.role}</h5>
-                        <p className="text-accent-blue text-sm mb-3">{job.company} | {job.date}</p>
-                        <ul className="space-y-2 list-disc list-inside text-sm">
-                          {job.tasks.map((task, j) => (
-                            <li key={j}>{task}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                  
-                </section>
                 {/* Projects */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">04</span>
                     PROJECTS
                   </h4>
                   <div className="space-y-8">
@@ -342,6 +308,124 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   </div>
                   
                 </section>
+                {/* Work Experience */}
+                {/* <section>
+                  <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
+                    PROFESSIONAL EXPERIENCE
+                  </h4>
+                  <div className="space-y-8">
+                    {[
+                      {
+                        role: 'Executive-IT',
+                        company: 'Regional Passport Office, Narayanganj',
+                        date: 'May 2018 - August 2025',
+                        tasks: [
+                          'Managed IT infrastructure and provided technical support for end users.',
+                          'Diagnosed and resolved hardware, software, and network-related issues.',
+                          'Maintained system reliability, user accounts, and biometric enrollment operations.',
+                        ]
+                      }
+                      
+                    ].map((job, i) => (
+                      <div key={i} className="pl-6">
+                        <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
+                        <h5 className="text-white font-bold">{job.role}</h5>
+                        <p className="text-accent-blue text-sm mb-3">{job.company} | {job.date}</p>
+                        <ul className="space-y-2 list-disc list-inside text-sm">
+                          {job.tasks.map((task, j) => (
+                            <li key={j}>{task}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                  
+                </section> */}
+                                <section>
+                                  <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
+                                    PROFESSIONAL EXPERIENCE
+                                  </h4>
+                                  <div className="space-y-8">
+                                    {[
+                                      {
+                                        role: 'Executive-IT',
+                                        company: 'Regional Passport Office, Narayanganj',
+                                        date: 'May 2018 - August 2025',
+                                        tasks: [
+                                          'Managed IT infrastructure, server operations, biometric systems, and technical support.',
+                                          'Resolved hardware, software, network, and user account issues while maintaining system reliability.',
+                                          // 'Manage server operations and bio-enrollment devices.',
+                                          // 'Provide technical support via phone and email for passport-related issues.'
+                                        ]
+                                      },
+                                      {
+                                        role: 'Supervisor',
+                                        company: 'iPeople Ltd. [Associated with Malaysian based company IRIS JV]',
+                                        date: 'August 2012 - April 2018',
+                                        tasks: [
+                                          'Supervised Machine Readable Passport (MRP) operations and coordinated administrative activities.',
+                                          'Led teams, monitored performance, maintained documentation, and ensured project compliance.',
+                                          // 'Coordinated between staff and upper management.',
+                                          // 'Maintained files, documentation, and attendance records.'
+                                        ]
+                                      },
+                                      // {
+                                      //   role: 'Supervisor',
+                                      //   company: 'iPeople Ltd. (IRIS JV)',
+                                      //   date: 'July 2012 - February 2014',
+                                      //   tasks: [
+                                      //     'Led daily operations for passport enrollment project in Comilla.',
+                                      //     'Monitored team performance and provided coaching.',
+                                      //     'Ensured compliance with policies and procedures.'
+                                      //   ]
+                                      // },
+                                      {
+                                        role: 'Enrollment Executive',
+                                        company: 'iPeople Ltd. (IRIS JV)',
+                                        date: 'April 2010 - June 2012',
+                                        tasks: [
+                                          'Processed passport applications, verified applicant data, managed fee collection, and maintained digital records.',
+                                          // 'Verified applicant identity and eligibility.',
+                                          // 'Managed digital records and documentation.'
+                                        ]
+                                      },
+                                      {
+                                        role: 'Documentation Engineer',
+                                        company: 'Speed Communication (Telecom & Network Engineering)',
+                                        date: 'April 2008 - February 2009',
+                                        tasks: [
+                                          'Prepared and maintained technical documentation for telecom and network engineering projects.',
+                                          // 'Collaborated with development, testing, and product management teams to ensure content accuracy.',
+                                          // 'Maintained all documentation to reflect the latest technical specifications and product updates.'
+                                        ]
+                                      },
+                                      {
+                                        role: 'Executive Officer',
+                                        company: 'Sky-Land Computers',
+                                        date: 'January 2004 - January 2008',
+                                        tasks: [
+                                          'Conducted technical training programs and developed instructional and training materials.',
+                                          // 'Conducted training needs assessments to identify skill gaps and improve curriculum.',
+                                          // 'Created comprehensive instructional materials, presentations, and training documentation.'
+                                        ]
+                                      }
+                                    ].map((job, i) => (
+                                      <div key={i} className="relative pl-6 border-l border-accent-blue/30">
+                                        <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
+                                        <h5 className="text-white font-bold">{job.role}</h5>
+                                        <p className="text-accent-blue text-sm mb-3">{job.company} | {job.date}</p>
+                                        <ul className="space-y-2 list-disc list-inside text-sm">
+                                          {job.tasks.map((task, j) => (
+                                            <li key={j}>{task}</li>
+                                          ))}
+                                        </ul>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </section>
+                
 
                 {/* Education */}
                 <section>
