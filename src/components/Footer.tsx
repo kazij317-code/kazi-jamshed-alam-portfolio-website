@@ -6,7 +6,11 @@ const Footer = () => {
   const socials = [
     { icon: 'fab fa-github', href: 'https://github.com/kazij317-code' },
     { icon: 'fab fa-linkedin', href: 'https://www.linkedin.com/in/kazi-jamshed-alam' },
-    { icon: 'fas fa-envelope', href: 'mailto:kazij317@gmail.com.com' },
+    // { icon: 'fas fa-envelope', href: 'mailto:kazij317@gmail.com' },
+    {
+  icon: "fas fa-envelope",
+  href: "https://mail.google.com/mail/?view=cm&fs=1&to=kazij317@gmail.com"
+}
   ];
 
   return (
@@ -16,7 +20,7 @@ const Footer = () => {
           <div className="space-y-6">
             <h2 className="text-2xl font-bold text-white">Kazi Jamshed Alam</h2>
             <p className="text-sm text-gray-400 leading-relaxed max-w-xs">
-              Full Stack Developer passionate about creating beautiful and functional web experiences.
+              Frontend Developer | MERN Stack Developer passionate about creating beautiful and functional web experiences.
             </p>
           </div>
 
@@ -29,15 +33,30 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="#skills" className="hover:text-accent-gold transition-colors text-gray-400 hover:translate-x-1 inline-block">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#education" className="hover:text-accent-gold transition-colors text-gray-400 hover:translate-x-1 inline-block">
+                  Education
+                </a>
+              </li>
+              <li>
+                <a href="#experience" className="hover:text-accent-gold transition-colors text-gray-400 hover:translate-x-1 inline-block">
+                  Experience
+                </a>
+              </li>
+              <li>
                 <a href="#projects" className="hover:text-accent-gold transition-colors text-gray-400 hover:translate-x-1 inline-block">
                   Projects
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#services" className="hover:text-accent-gold transition-colors text-gray-400 hover:translate-x-1 inline-block">
                   Services
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#contact" className="hover:text-accent-gold transition-colors text-gray-400 hover:translate-x-1 inline-block">
                   Contact
@@ -49,18 +68,38 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold text-white">Connect With Me</h3>
             <div className="flex items-center justify-between gap-4">
-              <div className="flex gap-6">
+              {/* <div className="flex gap-6">
                 {socials.map((social, i) => (
                   <motion.a
                     key={i}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ y: -5, color: '#22d3ee' }}
                     className="text-2xl text-white transition-colors"
                   >
                     <i className={social.icon}></i>
                   </motion.a>
                 ))}
-              </div>
+              </div> */}
+
+              {/* ---------------- */}
+                <div className="flex gap-6">
+  {socials.map((social, i) => (
+    <motion.a
+      key={i}
+      href={social.href}
+      target={social.href.startsWith("http") ? "_blank" : undefined}
+      rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
+      whileHover={{ y: -5, color: "#22d3ee" }}
+      className="text-2xl text-white transition-colors"
+    >
+      <i className={social.icon}></i>
+    </motion.a>
+  ))}
+</div>
+
+              {/* ----------------- */}
 
               <motion.a
                 href="#home"

@@ -6,8 +6,11 @@ const Contact = () => {
       label: 'EMAIL',
       value: 'kazij317@gmail.com',
       icon: 'far fa-envelope',
-      link: 'mailto:kazij317@gmail.com',
+      // link: 'mailto:kazij317@gmail.com',
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=kazij317@gmail.com',
     },
+
+    
     {
       label: 'MOBILE',
       value: '+8801712736526',
@@ -54,6 +57,8 @@ const Contact = () => {
               <p className="text-sm text-gray-300 mb-4 font-medium">{option.value}</p>
               <a 
                 href={option.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-xs text-accent-blue font-bold flex items-center gap-2 hover:gap-4 transition-all"
               >
                 {option.label === 'MOBILE' ? 'Call me' : option.label === 'WHATSAPP' ? 'WhatsApp' : 'Write me'} <i className="fas fa-arrow-right"></i>

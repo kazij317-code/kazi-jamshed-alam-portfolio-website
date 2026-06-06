@@ -63,12 +63,12 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                     <span><i className="fas fa-map-marker-alt mr-2"></i>Dhaka, Bangladesh</span>
                     <div className="h-6 w-px bg-white/20" />
                     
-                    <a href="tel:+8801712736526" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                    <a href="tel:+8801712736526" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline underline">
                       <span><i className="fas fa-phone-alt mr-2"></i>01712-736526</span>
                     </a>
                     <div className="h-6 w-px bg-white/20" />
                     
-                    <a href="mailto:kazij317@gmail.com" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kazij317@gmail.com" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:underline underline">
                       <span><i className="fas fa-envelope mr-2"></i>kazij317@gmail.com</span>
                     </a>
                     
@@ -150,10 +150,44 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                     
                 </section>
 
-                {/* Work Experience */}
+                {/* Practical Experience */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
                     <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">03</span>
+                    PRACTICAL EXPERIENCE
+                  </h4>
+                  <div className="space-y-8">
+                    {[
+                      {
+                        role: 'MERN Stack Developer Trainee - Programming Hero / Self-Led Projects Dec 2025 - Present',
+                        // company: 'Regional Passport Office, Narayanganj',
+                        // date: 'May 2018 - August 2025',
+                        tasks: [
+                          'Completed 800+ hours of project-based learning across JavaScript, React, Next.js, Node.js, Express.js, MongoDB, authentication, API integration, deployment, debugging and Git workflow.',
+                          'Built and deployed 12+ frontend/full-stack projects with mobile-first layouts, reusable components, protected routes, REST API integration, clean README files, and version-controlled commits.',
+                          'Used AI tools as coding assistants for requirement breakdown, bug tracing, refactoring ideas, documentation drafts, and interview preparation while manually reviewing generated code before use.',
+                        ]
+                      }
+                      
+                    ].map((job, i) => (
+                      <div key={i} className="pl-6">
+                        <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />
+                        <h5 className="text-white font-bold">{job.role}</h5>
+                        {/* <p className="text-accent-blue text-sm mb-3">{job.company} | {job.date}</p> */}
+                        <ul className="space-y-2 list-disc list-inside text-sm">
+                          {job.tasks.map((task, j) => (
+                            <li key={j}>{task}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                  
+                </section>
+                {/* Work Experience */}
+                <section>
+                  <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">04</span>
                     PROFESSIONAL EXPERIENCE
                   </h4>
                   <div className="space-y-8">
@@ -187,7 +221,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 {/* Projects */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">04</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
                     PROJECTS
                   </h4>
                   <div className="space-y-8">
@@ -312,7 +346,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 {/* Education */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">05</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">06</span>
                     Education
                   </h4>
                   <div className="space-y-4">
@@ -336,7 +370,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 {/* Certifications */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">06</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">07</span>
                     Certifications
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -344,10 +378,39 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                       <p className="text-xs text-white font-bold mb-1">(1) Complete Web Development Course</p>
                       <p className="text-[10px] text-accent-blue uppercase font-bold">with Programming Hero | 2026</p>
                     </div>
-                    <div className="p-4 rounded-xl bg-accent-blue/5 border border-accent-blue/10">
+                    {/* <div className="p-4 rounded-xl bg-accent-blue/5 border border-accent-blue/10">
                       <p className="text-xs text-white font-bold mb-1">(2) Oracle Database 11g: Administration Workshop</p>
                       <p className="text-[10px] text-accent-blue uppercase font-bold">Oracle University | IBCS-PRIMAX | 2019</p>
-                    </div>
+                    </div> */}
+
+                    {/* ------------------ */}
+                      <div className="p-4 rounded-xl bg-accent-blue/5 border border-accent-blue/10">
+  <p className="text-xs text-white font-bold mb-1">
+    (2) Oracle Database 11g: Administration Workshop
+  </p>
+
+  <p className="text-[10px] text-accent-blue uppercase font-bold">
+    <a
+      href="https://drive.google.com/file/d/1PgEEaNbh8CSr-UCERleSZl4gP0j2qlG6/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline underline"
+    >
+      Oracle University
+    </a>
+    {" | "}
+    <a
+      href="https://drive.google.com/file/d/1rcrfxdA5LgHXpX29jTlcnkX0hBvJOBqD/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:underline underline"
+    >
+      IBCS-PRIMAX
+    </a>
+    {" | 2019"}
+  </p>
+</div>
+                    {/* ----------------- */}
                   </div>
                 </section>
 
@@ -355,7 +418,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 <section>
                   
                   <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">07</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">08</span>
                     LANGUAGES
                   </h4>
                   <p className="leading-relaxed">
@@ -366,7 +429,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                 {/* Personal Details */}
                 <section>
                   <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-3">
-                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">08</span>
+                    <span className="w-8 h-8 rounded-lg bg-accent-blue/10 flex items-center justify-center text-accent-blue text-sm">09</span>
                     Personal Details
                   </h4>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-[11px]">
