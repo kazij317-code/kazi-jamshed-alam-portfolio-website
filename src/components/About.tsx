@@ -193,7 +193,20 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                   <div className="space-y-8">
                     {[
                       {
-                        name: '1. Idea Vault | Full Stack Idea Management Platform',                        
+                        name: '1. Recipe Hub | Full Stack Recipe Sharing Platform',                        
+                        // overview: 'A full-stack collaborative idea-sharing platform where users can create, manage, and interact with innovative ideas.',
+                        live: 'https://recipehub-client-livid.vercel.app',
+                        client: 'https://github.com/kazij317-code/recipehub-client',
+                        server: 'https://github.com/kazij317-code/recipehub-server',
+                        features: 'Next.js, React.js, Tailwind CSS, HeroUI, JWT with Better Auth, Node.js, Express.js, MongoDB',
+                        tasks: [
+                          'Developed a full-stack recipe sharing platform with recipe creation, editing, deletion, and category-based filtering.',
+                          'Implemented Better Auth, JWT authorization, protected routes, and personalized user dashboards for secure recipe management.',
+                          'Built responsive features including recipe search, bookmarking, ratings, likes, and a modern cross-device user experience.',                          
+                        ]
+                      },
+                      {
+                        name: '2. Idea Vault | Full Stack Idea Management Platform',                        
                         // overview: 'A full-stack collaborative idea-sharing platform where users can create, manage, and interact with innovative ideas.',
                         live: 'https://idea-vault-client-pi.vercel.app',
                         client: 'https://github.com/kazij317-code/IdeaVault-client',
@@ -206,7 +219,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                         ]
                       },
                       {
-                        name: '2. Qurbani Hat | Online Livestock Marketplace',                        
+                        name: '3. Qurbani Hat | Online Livestock Marketplace',                        
                         // overview: 'Online cattle marketplace platform for buying and selling sacrificial animals with secure user interaction.',
                         live: 'https://qurbani-hat-my-assignment.vercel.app',
                         client: 'https://github.com/kazij317-code/qurbani-hat-my-assignment',
@@ -217,21 +230,7 @@ export const ResumeModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () 
                           'Implemented authentication, protected routes, role-based access control.',
                           'Built a responsive UI with search, filtering, and seamless user experience across devices.',                          
                         ]
-                      },
-                      {
-                        name: '3. Keen Keeper | Task Management Application',                        
-                        // overview: 'Online cattle marketplace platform for buying and selling sacrificial animals with secure user interaction.',
-                        live: 'https://kazij317-code.github.io/B13-A7-keen-keeper/',
-                        client: 'https://github.com/kazij317-code/B13-A7-keen-keeper',
-                        server: 'NA',
-                        features: 'HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, DaisyUI',
-                        tasks: [
-                          'Built a responsive task management application for creating, organizing, and tracking daily tasks.',
-                          'Developed interactive UI components and real-time task updates using JavaScript DOM manipulation.',
-                          'Optimized user experience with a mobile-first design, responsive layouts, and fast-loading frontend architecture.',                          
-                        ]
                       }
-                      
                     ].map((job, i) => (
                       <div key={i} className="relative pl-6 border-l border-accent-blue/30">
                         <div className="absolute w-3 h-3 bg-accent-blue rounded-full -left-[6.5px] top-1.5 shadow-[0_0_10px_rgba(78,222,163,0.5)]" />

@@ -5,6 +5,27 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const projectsData = [
   {
+  title: 'RecipeHub – Recipe Sharing Platform',
+  description: 'RecipeHub is a full-stack recipe sharing platform where users can discover, create, update, and manage recipes from around the world. It features secure authentication, recipe bookmarking, category-based filtering, search functionality, ratings, and a responsive user-friendly interface.',
+  image: '/p8.png',
+  tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Better Auth'],
+  github: 'https://github.com/kazij317-code/recipehub-client.git',
+  demo: 'https://recipehub-client-livid.vercel.app',
+  glow: 'from-orange-500/20',
+  stack: [
+    'Next.js',
+    'React.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'Tailwind CSS',
+    'Better Auth',
+    'JWT'
+  ],
+  challenges: 'Implementing secure authentication with Better Auth and JWT, managing recipe CRUD operations with protected routes, building bookmarking and rating features, and optimizing responsive UI with efficient state management.',
+  improvements: 'Add AI-powered recipe recommendations, meal planning, nutrition analysis, real-time notifications, social recipe sharing, and an admin dashboard for recipe moderation and analytics.'
+},
+  {
   title: 'IdeaVault – Idea Sharing Platform',
   description: 'IdeaVault is a modern idea-sharing platform where users can create, manage, and explore innovative ideas. It features secure authentication, personalized dashboards, search and category filtering, and an interactive commenting system for community engagement.',
   image: '/p7.png',
