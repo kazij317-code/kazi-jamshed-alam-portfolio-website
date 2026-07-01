@@ -162,31 +162,33 @@ const Projects = () => {
           <p className="text-gray-400 text-sm">Recent Projects</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 min-h-[500px] md:min-h-[800px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <AnimatePresence mode="wait">
-            {currentProjects.map((project, i) => (
-              <motion.div 
-                key={project.title}
-                whileHover={{ y: -10 }}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
-                className="project-card bg-card-bg/30 backdrop-blur-sm rounded-[2rem] overflow-hidden flex flex-col h-full border border-white/5 hover:border-white/10 transition-all group shadow-2xl"
-              >
-                {/* Image Container with Glow */}
-                <div className={`relative h-64 p-4 bg-gradient-to-b ${project.glow} to-transparent`}>
-                  <div className="w-full h-full rounded-2xl overflow-hidden relative border border-white/10 shadow-lg bg-black/40">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
-                    />
+            {currentProjects.map((project, i) => {
+              const isCompact = activePage !== 1;
+              return (
+                <motion.div 
+                  key={project.title}
+                  whileHover={{ y: -10 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  className="project-card bg-card-bg/30 backdrop-blur-sm rounded-[2rem] overflow-hidden flex flex-col border border-white/5 hover:border-white/10 transition-all group shadow-2xl"
+                >
+                  {/* Image Container with Glow */}
+                  <div className={`relative ${isCompact ? 'h-56' : 'h-64'} p-4 bg-gradient-to-b ${project.glow} to-transparent`}>
+                    <div className="w-full h-full rounded-2xl overflow-hidden relative border border-white/10 shadow-lg bg-black/40">
+                      <img 
+                        src={project.image} 
+                        alt={project.title} 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div className="p-8 pt-4 flex-grow flex flex-col">
-                  <h3 className="text-xl font-bold mb-4 text-white leading-tight">{project.title}</h3>
+                  <div className={`${isCompact ? 'p-6 pt-3' : 'p-8 pt-4'} flex-grow flex flex-col`}>
+                    <h3 className="text-xl font-bold mb-3 text-white leading-tight">{project.title}</h3>
                   {/* line-clamp-3 */}
                   {/* <p className="text-sm text-gray-400 mb-6 leading-relaxed">
                     {project.description}
@@ -200,27 +202,28 @@ const Projects = () => {
                     ))}
                   </div> */}
 
-                  <div className="flex flex-col gap-3">
-                    {/* <div className="flex gap-3">
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 bg-transparent border border-white/10 text-center py-2.5 rounded-xl text-sm font-bold text-white hover:bg-white/5 transition-all">
-                      <i className="fab fa-github mr-2"></i>
-                        GitHub
-                      </a>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1 bg-cyan-400 text-center py-2.5 rounded-xl text-sm font-bold text-black hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(34,211,238,0.3)]">
-                        <i className="fas fa-external-link-alt mr-2"></i>
-                        Live Demo
-                      </a>
-                    </div> */}
-                    <button 
-                      onClick={() => setSelectedProject(project as Project)}
-                      className="w-full bg-white/5 border border-white/10 text-center py-2.5 rounded-xl text-sm font-bold text-white hover:bg-white/10 transition-all"
-                    >
-                      View Details
-                    </button>
+                    <div className="flex flex-col gap-3 mt-auto">
+                      {/* <div className="flex gap-3">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1 bg-transparent border border-white/10 text-center py-2.5 rounded-xl text-sm font-bold text-white hover:bg-white/5 transition-all">
+                        <i className="fab fa-github mr-2"></i>
+                          GitHub
+                        </a>
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1 bg-cyan-400 text-center py-2.5 rounded-xl text-sm font-bold text-black hover:opacity-90 transition-opacity shadow-[0_0_20px_rgba(34,211,238,0.3)]">
+                          <i className="fas fa-external-link-alt mr-2"></i>
+                          Live Demo
+                        </a>
+                      </div> */}
+                      <button 
+                        onClick={() => setSelectedProject(project as Project)}
+                        className="w-full bg-white/5 border border-white/10 text-center py-2.5 rounded-xl text-sm font-bold text-white hover:bg-white/10 transition-all"
+                      >
+                        View Details
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              );
+            })}
           </AnimatePresence>
         </div>
 
